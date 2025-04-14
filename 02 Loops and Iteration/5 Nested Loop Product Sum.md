@@ -97,9 +97,18 @@ rl.on('line', (line) => {
 
 ---
 
-## ✍️ Author
+## 👨‍💻 Author  
 
-**Darshan Vasani**  
-[Website](https://dpvasani56.vercel.app/) | [GitHub](https://github.com/dpvasani) | [LinkedIn](https://linkedin.com/in/dpvasani56)
+### 🚀 **Darshan Vasani**  
+💡 **Full-Stack Developer | Software Engineer | Mentor**    
+
+### 🔗 Connect with me! 🌍  
+🌐 **Portfolio:** [dpvasani56.vercel.app](https://dpvasani56.vercel.app/)  
+🐙 **GitHub:** [github.com/dpvasani](https://github.com/dpvasani)  
+💼 **LinkedIn:** [linkedin.com/in/dpvasani56](https://www.linkedin.com/in/dpvasani56/)  
+🌳 **Linktree:** [linktr.ee/dpvasani56](https://linktr.ee/dpvasani56)  
+🎓 **Credly:** [credly.com/users/dpvasani57](https://www.credly.com/users/dpvasani57/)  
+🐦 **Twitter:** [x.com/vasanidarshan56](https://x.com/vasanidarshan56)  
+📢 **Topmate:** [topmate.io/dpvasani56](https://topmate.io/dpvasani56)  
 
 ---
