@@ -61,23 +61,22 @@ An integer representing the product sum of the nested array.
 ## ✅ JavaScript Solution
 
 ```js
-function productSum(arr, depth = 1) {
-  let sum = 0;
-
-  for (let el of arr) {
-    if (Array.isArray(el)) {
-      sum += productSum(el, depth + 1);
-    } else {
-      sum += el;
-    }
-  }
-
-  return sum * depth;
-}
-
 function solve(input) {
-  return productSum(input);
+  function helper(arr, depth = 1) {
+    let sum = 0;
+    for (let val of arr) {
+      if (Array.isArray(val)) {
+        sum += helper(val, depth + 1);
+      } else {
+        sum += val * depth;
+      }
+    }
+    return sum;
+  }
+  
+  return helper(input);
 }
+
 
 // Please don't touch the code below
 const readline = require('readline');
@@ -89,7 +88,6 @@ rl.on('line', (line) => {
   const result = solve(input);
   process.stdout.write(JSON.stringify(result));
 });
-```
 
 ---
 
