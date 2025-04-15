@@ -1,7 +1,7 @@
 # 🧩 First Non-Repeating Character
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 3)  
+> **Sprint:** JavaScript Sprint
 > **Category:** String Manipulation
 
 ---

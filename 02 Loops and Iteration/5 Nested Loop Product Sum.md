@@ -1,7 +1,7 @@
 # 🧮 Nested Loop Product Sum
 
 > **Difficulty:** Hard  
-> **Sprint:** JavaScript Sprint (Day 2)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** Recursion, Arrays
 
 ---

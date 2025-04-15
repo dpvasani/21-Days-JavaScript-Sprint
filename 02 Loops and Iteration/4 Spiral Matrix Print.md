@@ -1,7 +1,7 @@
 # 🌀 Spiral Matrix Print
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 2)  
+> **Sprint:** JavaScript Sprint
 > **Category:** 2D Arrays, Matrix Traversal
 
 ---

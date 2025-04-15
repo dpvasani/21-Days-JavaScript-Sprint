@@ -1,7 +1,7 @@
 # 🔤 Count Vowels
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint (Day 3)  
+> **Sprint:** JavaScript Sprint
 > **Category:** String Manipulation
 
 ---

@@ -1,7 +1,7 @@
 # ➕ Sum of Even Numbers
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint (Day 2)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** Arrays, Number Filtering
 
 ---

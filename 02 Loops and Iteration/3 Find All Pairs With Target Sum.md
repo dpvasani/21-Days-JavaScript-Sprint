@@ -1,7 +1,7 @@
 # 🎯 Find All Pairs With Target Sum
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 2)  
+> **Sprint:** JavaScript Sprint
 > **Category:** Arrays, Hashing, Two Sum
 
 ---

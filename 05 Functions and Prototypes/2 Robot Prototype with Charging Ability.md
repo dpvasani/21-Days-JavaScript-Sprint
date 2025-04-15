@@ -1,7 +1,7 @@
 # 📝 Robot Prototype with Charging Ability
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint (Day 5)  
+> **Sprint:** JavaScript Sprint
 > **Category:** Prototypes
 
 ---

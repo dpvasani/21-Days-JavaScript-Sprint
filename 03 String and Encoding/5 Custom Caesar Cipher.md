@@ -1,7 +1,7 @@
 # 🧩 Custom Caesar Cipher
 
 > **Difficulty:** Hard  
-> **Sprint:** JavaScript Sprint (Day 3)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** String Manipulation
 
 ---

@@ -1,7 +1,7 @@
 # 📝 Triwizard Maze Navigation
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 4)  
+> **Sprint:** JavaScript Sprint  
 > **Category:** Logic
 
 ---

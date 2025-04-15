@@ -1,41 +1,46 @@
-# 📝 Basic Animal Prototype
+# 📝 Counter with Increment and Decrement
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint 
+> **Sprint:** JavaScript Sprint
 > **Category:** Prototypes
 
 ---
 
 ## Problem Statement
 
-You need to create a constructor function `Animal` that takes a `name` parameter. Add a method `makeSound` to its prototype, which always returns `"Some generic sound"`.
+You need to create a counter constructor function that initializes a `count` property to `0`.  
+The counter should have two prototype methods:
 
-### Challenge:
-- Implement a constructor function `Animal` that initializes the `name` property.
-- Attach a method `makeSound` to its prototype that returns `"Some generic sound"`.
+1. **increment()**  
+   Increases the `count` by 1.
+
+2. **decrement()**  
+   Decreases the `count` by 1.
 
 ---
 
 ## Input Format
 
-The input contains a JSON object with the `name` of the animal.
+The input is an action string which will be either `"increment"` or `"decrement"`.
 
 ### Example Input
 
 ```json
-{"name": "Lion"}
+{
+  "action": "increment"
+}
 ```
 
 ---
 
 ## Output Format
 
-The output should be the result of calling `makeSound` on an `Animal` instance, which always returns `"Some generic sound"`.
+The output should be the updated value of the `count` after performing the given action.
 
 ### Example Output
 
 ```json
-"Some generic sound"
+1
 ```
 
 ---
@@ -43,14 +48,19 @@ The output should be the result of calling `makeSound` on an `Animal` instance, 
 ## JavaScript Solution
 
 ```js
-function Animal(name) {
-  // Initialize name property
-  this.name = name;
+function Counter() {
+  // Initialize count property
+  this.count = 0;
 }
 
-// Define makeSound method on Animal's prototype
-Animal.prototype.makeSound = function() {
-  return "Some generic sound";
+// Define increment method on Counter's prototype
+Counter.prototype.increment = function () {
+  this.count += 1;
+};
+
+// Define decrement method on Counter's prototype
+Counter.prototype.decrement = function () {
+  this.count -= 1;
 };
 
 // Please don't remove the code below
@@ -62,9 +72,16 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', (input) => {
-  const { name } = JSON.parse(input);
-  const animal = new Animal(name);
-  process.stdout.write(JSON.stringify(animal.makeSound()));
+  const { action } = JSON.parse(input);
+  const counter = new Counter();
+
+  if (action === "increment") {
+    counter.increment();
+  } else if (action === "decrement") {
+    counter.decrement();
+  }
+
+  process.stdout.write(JSON.stringify(counter.count));
 });
 ```
 
@@ -72,7 +89,7 @@ rl.on('line', (input) => {
 
 ## 🏷️ Tags
 
-`#JavaScript` `#Prototypes` `#Constructor` `#Methods`
+`#JavaScript` `#Prototypes` `#Counter` `#Increment` `#Decrement`
 
 ---
 
@@ -91,3 +108,4 @@ rl.on('line', (input) => {
 📢 **Topmate:** [topmate.io/dpvasani56](https://topmate.io/dpvasani56)  
 
 ---
+

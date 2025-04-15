@@ -1,11 +1,7 @@
-Here’s the polished and formatted markdown for the **Run-Length Encoding** problem:
-
----
-
 # 🔢 Run-Length Encoding
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 3)  
+> **Sprint:** JavaScript Sprint  
 > **Category:** String Manipulation
 
 ---

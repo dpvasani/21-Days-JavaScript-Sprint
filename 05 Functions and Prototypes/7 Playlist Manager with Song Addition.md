@@ -1,41 +1,42 @@
-# 📝 Basic Animal Prototype
+# 📝 Playlist Manager with Song Addition
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint 
+> **Sprint:** JavaScript Sprint
 > **Category:** Prototypes
 
 ---
 
 ## Problem Statement
 
-You need to create a constructor function `Animal` that takes a `name` parameter. Add a method `makeSound` to its prototype, which always returns `"Some generic sound"`.
-
-### Challenge:
-- Implement a constructor function `Animal` that initializes the `name` property.
-- Attach a method `makeSound` to its prototype that returns `"Some generic sound"`.
+Create a `Playlist` constructor function that initializes an empty `songs` array.  
+You need to implement a method `addSong(song)` on the prototype which adds the given `song` to the `songs` array.
 
 ---
 
 ## Input Format
 
-The input contains a JSON object with the `name` of the animal.
+The input is a JSON object containing a single key:
+
+- `song`: A string representing the name of the song to be added.
 
 ### Example Input
 
 ```json
-{"name": "Lion"}
+{
+  "song": "Bohemian Rhapsody"
+}
 ```
 
 ---
 
 ## Output Format
 
-The output should be the result of calling `makeSound` on an `Animal` instance, which always returns `"Some generic sound"`.
+The output should be the array of songs after adding the new song.
 
 ### Example Output
 
 ```json
-"Some generic sound"
+["Bohemian Rhapsody"]
 ```
 
 ---
@@ -43,14 +44,14 @@ The output should be the result of calling `makeSound` on an `Animal` instance, 
 ## JavaScript Solution
 
 ```js
-function Animal(name) {
-  // Initialize name property
-  this.name = name;
+function Playlist() {
+  // Initialize songs property
+  this.songs = [];
 }
 
-// Define makeSound method on Animal's prototype
-Animal.prototype.makeSound = function() {
-  return "Some generic sound";
+// Define addSong method on Playlist's prototype
+Playlist.prototype.addSong = function(song) {
+  this.songs.push(song);
 };
 
 // Please don't remove the code below
@@ -62,9 +63,10 @@ const rl = readline.createInterface({
 });
 
 rl.on('line', (input) => {
-  const { name } = JSON.parse(input);
-  const animal = new Animal(name);
-  process.stdout.write(JSON.stringify(animal.makeSound()));
+  const { song } = JSON.parse(input);
+  const playlist = new Playlist();
+  playlist.addSong(song);
+  process.stdout.write(JSON.stringify(playlist.songs));
 });
 ```
 
@@ -72,7 +74,7 @@ rl.on('line', (input) => {
 
 ## 🏷️ Tags
 
-`#JavaScript` `#Prototypes` `#Constructor` `#Methods`
+`#JavaScript` `#Prototypes` `#Playlist` `#SongManager` `#ConstructorFunction`
 
 ---
 

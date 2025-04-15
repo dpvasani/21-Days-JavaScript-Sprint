@@ -1,7 +1,7 @@
 # 🚗 Speeding Tickets
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 4)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** Conditional Logic
 
 ---

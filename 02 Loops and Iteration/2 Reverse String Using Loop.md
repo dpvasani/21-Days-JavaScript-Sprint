@@ -1,7 +1,7 @@
 # 🔁 Reverse String Using Loop
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint (Day 2)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** Strings, Loops
 
 ---

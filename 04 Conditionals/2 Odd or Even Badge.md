@@ -2,7 +2,7 @@
 # 🏷️ Odd or Even Badge
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint (Day 4)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** Basic Logic
 
 ---

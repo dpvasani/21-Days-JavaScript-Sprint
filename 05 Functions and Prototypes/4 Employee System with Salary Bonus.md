@@ -1,7 +1,7 @@
 # 📝 Employee System with Salary Bonus
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 5)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** Prototypes
 
 ---

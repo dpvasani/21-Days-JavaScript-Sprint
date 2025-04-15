@@ -1,7 +1,7 @@
 # 📝 Student Grading System
 
 > **Difficulty:** Medium  
-> **Sprint:** JavaScript Sprint (Day 4)  
+> **Sprint:** JavaScript Sprint  
 > **Category:** Conditionals
 
 ---

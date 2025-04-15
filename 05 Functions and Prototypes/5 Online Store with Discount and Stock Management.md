@@ -1,7 +1,7 @@
 # 📝 Online Store with Discount and Stock Management
 
 > **Difficulty:** Hard  
-> **Sprint:** JavaScript Sprint (Day 5)  
+> **Sprint:** JavaScript Sprint 
 > **Category:** Prototypes
 
 ---
