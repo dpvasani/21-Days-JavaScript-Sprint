@@ -1,7 +1,3 @@
-Here’s the complete solution for **D10 Q3 – Reduce to the Core (`myReduce`)**, structured with clarity and ready for plug-and-play usage in your sprint documentation.
-
----
-
 # 🔋 Reduce to the Core (myReduce)
 
 > **Difficulty:** Medium  
@@ -138,5 +134,3 @@ Full-Stack Dev | Mentor | Community Builder
 🔗 [topmate.io/dpvasani56](https://topmate.io/dpvasani56)
 
 ---
-
-Ready for D10 Q4 or want to include `reduceRight` as an extra challenge?
