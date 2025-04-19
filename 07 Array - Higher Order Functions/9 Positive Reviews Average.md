@@ -100,11 +100,13 @@ rl.on('line', (line) => {
 ### 🚀 **Darshan Vasani**  
 💡 **Full-Stack Developer | Software Engineer | Mentor**    
 
-### 🔗 Connect with me!  
-🌐 [dpvasani56.vercel.app](https://dpvasani56.vercel.app)  
-🐙 [github.com/dpvasani](https://github.com/dpvasani)  
-💼 [linkedin.com/in/dpvasani56](https://www.linkedin.com/in/dpvasani56/)  
-🌳 [linktr.ee/dpvasani56](https://linktr.ee/dpvasani56)  
-📢 [topmate.io/dpvasani56](https://topmate.io/dpvasani56)
+### 🔗 Connect with me! 🌍  
+🌐 **Portfolio:** [dpvasani56.vercel.app](https://dpvasani56.vercel.app/)  
+🐙 **GitHub:** [github.com/dpvasani](https://github.com/dpvasani)  
+💼 **LinkedIn:** [linkedin.com/in/dpvasani56](https://www.linkedin.com/in/dpvasani56/)  
+🌳 **Linktree:** [linktr.ee/dpvasani56](https://linktr.ee/dpvasani56)  
+🎓 **Credly:** [credly.com/users/dpvasani57](https://www.credly.com/users/dpvasani57/)  
+🐦 **Twitter:** [x.com/vasanidarshan56](https://x.com/vasanidarshan56)  
+📢 **Topmate:** [topmate.io/dpvasani56](https://topmate.io/dpvasani56)  
 
 ---
