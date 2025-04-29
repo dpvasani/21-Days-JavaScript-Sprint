@@ -1,7 +1,7 @@
 # 💾 AutoSaver Debounce
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint (Day 9)  
+> **Sprint:** JavaScript Sprint (Day 19)  
 > **Category:** Debounce | Timing | Utility Functions
 
 ---
