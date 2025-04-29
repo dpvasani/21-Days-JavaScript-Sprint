@@ -1,7 +1,7 @@
 # ⏱️ Rate-Limited Button (Throttle)
 
 > **Difficulty:** Easy  
-> **Sprint:** JavaScript Sprint (Day 9)  
+> **Sprint:** JavaScript Sprint (Day 19)  
 > **Category:** Throttle | Timing | Utility Functions
 
 ---
