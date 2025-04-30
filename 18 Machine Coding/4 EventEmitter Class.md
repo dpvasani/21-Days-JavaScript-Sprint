@@ -1,4 +1,4 @@
-# 🗂️ EventEmitter Class
+# 🧠 EventEmitter Class
 
 > **Difficulty:** Medium  
 > **Sprint:** JavaScript Sprint (Day 21)  
@@ -14,7 +14,7 @@ You are tasked with implementing a class `EventEmitter` that simulates an event-
 2. **off(eventName, callback)**: Unregister a previously registered callback for an event.
 3. **emit(eventName, ...args)**: Trigger all registered callbacks for the event, passing any arguments to them.
 
-### Methods:
+### ✅ Requirements
 
 - **on(eventName, callback)**: Registers a callback for the event `eventName`.
 - **off(eventName, callback)**: Removes a previously registered callback for the event `eventName`.
@@ -34,8 +34,8 @@ Each operation includes the event name and the associated callback (if applicabl
 ### Example Input:
 
 ```json
-[
-  ["on", "play", "cb1"],
+[ 
+  ["on", "play", "cb1"], 
   ["emit", "play", "song1"]
 ]
 ```
@@ -59,8 +59,8 @@ The output should be an array of strings, where each string is the result of exe
 ### Input:
 
 ```json
-[
-  [["on", "play", "cb1"], ["emit", "play", "song1"]]
+[ 
+  [["on", "play", "cb1"], ["emit", "play", "song1"]] 
 ]
 ```
 
@@ -74,7 +74,7 @@ The output should be an array of strings, where each string is the result of exe
 
 ## ✅ JavaScript Solution
 
-### 🔑 Key Concepts
+### Key Concepts:
 
 - **Event-driven architecture** for handling events.
 - **Callback management** with `on`, `off`, and `emit`.
@@ -83,6 +83,44 @@ The output should be an array of strings, where each string is the result of exe
 ---
 
 ### JavaScript Code:
+
+```js
+class EventEmitter {
+  constructor() {
+    this.events = {};  // Store event listeners for each event name
+  }
+
+  // Register a callback for the event
+  on(eventName, callback) {
+    if (!this.events[eventName]) {
+      this.events[eventName] = [];  // Initialize the event if it doesn't exist
+    }
+    this.events[eventName].push(callback);  // Add the callback to the list of listeners
+  }
+
+  // Unregister a callback for the event
+  off(eventName, callback) {
+    if (!this.events[eventName]) return;
+
+    // Remove the callback from the event listeners
+    this.events[eventName] = this.events[eventName].filter(cb => cb !== callback);
+  }
+
+  // Trigger the event and call all registered callbacks with the provided arguments
+  emit(eventName, ...args) {
+    if (!this.events[eventName]) return;
+
+    // Call each callback with the provided arguments
+    for (const callback of this.events[eventName]) {
+      callback(...args);
+    }
+  }
+}
+```
+
+---
+
+## 🧾 Full Code with Input Handler
 
 ```js
 class EventEmitter {
@@ -159,9 +197,9 @@ rl.on('line', (line) => {
 
 ## 🧠 Key Concepts
 
-- **Event Listeners**: Manage multiple listeners for a single event.
-- **Callback Removal**: Efficiently remove specific callbacks.
-- **Emit Event**: Execute callbacks in the order they were added.
+- ✅ **Event Listeners**: Manage multiple listeners for a single event.
+- 💡 **Callback Removal**: Efficiently remove specific callbacks.
+- 🛠️ **Emit Event**: Execute callbacks in the order they were added.
 
 ---
 
@@ -176,9 +214,13 @@ rl.on('line', (line) => {
 ### 🚀 **Darshan Vasani**  
 💡 **Full-Stack Developer | Software Engineer | Mentor**
 
-### 🔗 Connect with me  
-🌐 [dpvasani56.vercel.app](https://dpvasani56.vercel.app/)  
-🐱 [GitHub](https://github.com/dpvasani) | 👔 [LinkedIn](https://linkedin.com/in/dpvasani56)  
-📢 [Topmate](https://topmate.io/dpvasani56) | 🌲 [Linktree](https://linktr.ee/dpvasani56)
+### 🔗 Connect with me! 🌍  
+🌐 **Portfolio:** [dpvasani56.vercel.app](https://dpvasani56.vercel.app/)  
+🐙 **GitHub:** [github.com/dpvasani](https://github.com/dpvasani)  
+💼 **LinkedIn:** [linkedin.com/in/dpvasani56](https://linkedin.com/in/dpvasani56/)  
+🌳 **Linktree:** [linktr.ee/dpvasani56](https://linktr.ee/dpvasani56)  
+🐦 **Twitter:** [x.com/vasanidarshan56](https://x.com/vasanidarshan56)  
+📢 **Topmate:** [topmate.io/dpvasani56](https://topmate.io/dpvasani56)
 
 ---
+

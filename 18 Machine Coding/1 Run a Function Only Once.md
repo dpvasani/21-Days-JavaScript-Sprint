@@ -1,3 +1,4 @@
+
 # 🧠 Run a Function Only Once
 
 > **Difficulty:** Easy  
@@ -138,8 +139,8 @@ rl.on('line', (line) => {
 
 ## 🧠 Key Concepts
 
-- ✅ **Closures** for private state
-- 💡 **Memoization** for first result
+- ✅ **Closures** for private state  
+- 💡 **Memoization** for first result  
 - 🛡️ **Function wrapping**
 
 ---
@@ -160,6 +161,7 @@ rl.on('line', (line) => {
 🐙 **GitHub:** [github.com/dpvasani](https://github.com/dpvasani)  
 💼 **LinkedIn:** [linkedin.com/in/dpvasani56](https://linkedin.com/in/dpvasani56/)  
 🌳 **Linktree:** [linktr.ee/dpvasani56](https://linktr.ee/dpvasani56)  
+🐦 **Twitter:** [x.com/vasanidarshan56](https://x.com/vasanidarshan56)  
 📢 **Topmate:** [topmate.io/dpvasani56](https://topmate.io/dpvasani56)
 
 ---

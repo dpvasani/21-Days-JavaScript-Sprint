@@ -68,7 +68,7 @@ A single-level flattened array.
 
 ### Key Concepts:
 
-- **Recursion** to go deep into nested structures
+- **Recursion** to go deep into nested structures  
 - Use of `Array.isArray()` to distinguish values
 
 ---
@@ -128,8 +128,8 @@ rl.on('line', (line) => {
 
 ## 🧠 Key Concepts
 
-- 🧬 **Recursion**
-- 📦 **Array Traversal**
+- 🧬 **Recursion**  
+- 📦 **Array Traversal**  
 - 🔁 **Spread operator**
 
 ---
@@ -150,6 +150,9 @@ rl.on('line', (line) => {
 🐙 **GitHub:** [github.com/dpvasani](https://github.com/dpvasani)  
 💼 **LinkedIn:** [linkedin.com/in/dpvasani56](https://linkedin.com/in/dpvasani56/)  
 🌳 **Linktree:** [linktr.ee/dpvasani56](https://linktr.ee/dpvasani56)  
+🐦 **Twitter:** [x.com/vasanidarshan56](https://x.com/vasanidarshan56)  
 📢 **Topmate:** [topmate.io/dpvasani56](https://topmate.io/dpvasani56)
 
 ---
+
+
