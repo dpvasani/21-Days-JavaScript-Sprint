@@ -100,26 +100,32 @@ A sorted array of user summary objects:
 
 ```js
 function solve(input) {
-  const map = {};
+  const grouped = input.reduce((acc, transaction) => {
+    const { userId, amount, timestamp } = transaction;
 
-  for (const txn of input) {
-    const { userId, amount, timestamp } = txn;
-
-    if (!map[userId]) {
-      map[userId] = {
-        userId,
-        totalAmount: amount,
-        earliestTransaction: timestamp,
+    if (!acc[userId]) {
+      acc[userId] = {
+        totalAmount: 0,
+        firstTransaction: timestamp
       };
-    } else {
-      map[userId].totalAmount += amount;
-      if (timestamp < map[userId].earliestTransaction) {
-        map[userId].earliestTransaction = timestamp;
-      }
     }
-  }
 
-  return Object.values(map).sort((a, b) => a.userId - b.userId);
+    acc[userId].totalAmount += amount;
+
+    if (timestamp < acc[userId].firstTransaction) {
+      acc[userId].firstTransaction = timestamp;
+    }
+
+    return acc;
+  }, {});
+
+  return Object.keys(grouped)
+    .map(userId => ({
+      userId: parseInt(userId),
+      totalAmount: grouped[userId].totalAmount,
+      firstTransaction: grouped[userId].firstTransaction
+    }))
+    .sort((a, b) => a.userId - b.userId);
 }
 ```
 
@@ -129,31 +135,36 @@ function solve(input) {
 
 ```js
 function solve(input) {
-  const map = {};
+  const grouped = input.reduce((acc, transaction) => {
+    const { userId, amount, timestamp } = transaction;
 
-  for (const txn of input) {
-    const { userId, amount, timestamp } = txn;
-
-    if (!map[userId]) {
-      map[userId] = {
-        userId,
-        totalAmount: amount,
-        earliestTransaction: timestamp,
+    if (!acc[userId]) {
+      acc[userId] = {
+        totalAmount: 0,
+        firstTransaction: timestamp
       };
-    } else {
-      map[userId].totalAmount += amount;
-      if (timestamp < map[userId].earliestTransaction) {
-        map[userId].earliestTransaction = timestamp;
-      }
     }
-  }
 
-  return Object.values(map).sort((a, b) => a.userId - b.userId);
+    acc[userId].totalAmount += amount;
+
+    if (timestamp < acc[userId].firstTransaction) {
+      acc[userId].firstTransaction = timestamp;
+    }
+
+    return acc;
+  }, {});
+
+  return Object.keys(grouped)
+    .map(userId => ({
+      userId: parseInt(userId),
+      totalAmount: grouped[userId].totalAmount,
+      firstTransaction: grouped[userId].firstTransaction
+    }))
+    .sort((a, b) => a.userId - b.userId);
 }
 
 // Please don't touch the code below
 const readline = require('readline');
-
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
 
 rl.on('line', (line) => {
@@ -161,6 +172,7 @@ rl.on('line', (line) => {
   const result = solve(input);
   process.stdout.write(JSON.stringify(result));
 });
+
 ```
 
 ---
